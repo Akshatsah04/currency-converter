@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: #1E1E1E;
+}
+.size{
+    height: 200px;
+    width: 200px;
+}
+
+.c1{
+    background-color: #121212;
+}
+.c2{
+    background-color: #7B61FF;
+}
+.c3{
+    background-color: #9E78FF;
+}
+.c4{
+    background-color: #4A90E2;
+}
+.c5{
+    background-color: #5AA9E6;
+}
+.c6{
+    background-color: #FF5E9A;
+}
+.c7{
+    background-color: #FF8C42;
+}
+.c8{
+    background-color: #1E1E1E;
+}
+.c9{
+    background-color: #2A2A2A;
+}
+.c0{
+    background-color: #D1D1D1;
+}
+
+.body2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contain{
+    height: 50vh;
+    width: 50vw;
+    background-color: #121212;
+    border-radius: 50px;
+    box-shadow: black 10px 10px 20px;
+}
+.head{
+    color: white;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    height: 80%;
+
+}
+.main2{
+    height: 100%;
+
+}
+.inputs{
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.butt{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 80%;
+    width: 60%;
+    border-radius: 5rem;
+    border: none;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.img1{
+    height: 2rem;
+    width: 3rem;
+    /* background-color: white; */
+    background-image: url(https://flagsapi.com/US/flat/64.png) ;
+    background-position: center;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+.img2{
+    height: 2rem;
+    width: 3rem;
+    background-color: white;
+    background-image: url(https://flagsapi.com/IN/flat/64.png) ;
+    background-position: center;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+.up1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.up2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.amount1{
+    height: 2.5rem;
+    width: 15rem;
+    border: none;
+    border-radius: .5rem;
+}
+.amount2{
+    height: 2.5rem;
+    width: 15rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.arrow{
+    height: 28px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#curr1{
+    height: 2rem;
+    width: 3rem;
+    border: none;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+
+}
+#curr2{
+    height: 2rem;
+    width: 3rem;
+    border: none;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+
+}
