@@ -1,4 +1,4 @@
-let base_url ="https://2024-03-06.currency-api.pages.dev/v1/currencies/inr.json";
+let base_url ="https://2024-03-06.currency-api.pages.dev/v1/currencies/usd.json";
 let flag_url ="https://flagsapi.com/US/flat/64.png";
 
 let img1 = document.querySelector(".img1");
@@ -15,7 +15,11 @@ async function rate(){
 
     let data= await res.json();
 
-    console.log(data.inr.acs);
+    // console.log(data.inr.acs);
+    rate =data.inr.acs;
+    // console.log(rate);
+
+    return rate;
 
 }
 
@@ -45,6 +49,8 @@ dd1.addEventListener("change",(event)=>{
     let newStr = concode.slice(0, -1);
 
     img1.style.backgroundImage = `url(https://flagsapi.com/${newStr}/flat/64.png)`;
+
+
 })
 dd2.addEventListener("change",(event)=>{
     let concode=event.target.value;
@@ -53,3 +59,51 @@ dd2.addEventListener("change",(event)=>{
     img2.style.backgroundImage = `url(https://flagsapi.com/${newStr}/flat/64.png)`;
 })
 
+
+
+
+// ..................................................................................converter part...................................................
+
+
+let btn=document.querySelector(".butt");
+let amount = document.querySelector(".amount1")
+let finamou = document.querySelector(".amount2")
+
+btn.addEventListener("click", async(evt)=>{
+    evt.preventDefault();
+
+    let co = document.querySelector("#curr1");
+    let co2 = document.querySelector("#curr2");
+
+    let base2_url=`https://2024-03-06.currency-api.pages.dev/v1/currencies/${co.value.toLowerCase()}.json`;
+
+    
+
+
+    let res = await fetch(base2_url);
+
+    let data= await res.json();
+    
+    let rate =data[co.value.toLowerCase()];
+    let myrate = rate[co2.value.toLowerCase()];
+
+
+
+
+
+
+
+
+
+    
+    // let res =rate();
+    let input = amount.value;
+    let fians = input*myrate;
+    finamou.innerText=fians;
+    // console.log(res.PromiseResult);
+
+    
+
+    
+
+})
