@@ -188,6 +188,10 @@ button{
     }
     .amount2{
         font-size: 4vw;
+        padding-left: .2rem;
+        display: flex;
+        justify-content: left;
+        align-items: center;
     }
 
 }
