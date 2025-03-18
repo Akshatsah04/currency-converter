@@ -125,13 +125,13 @@ button{
 }
 .amount1{
     height: 2.5rem;
-    width: 15rem;
+    width: 100%;
     border: none;
     border-radius: .5rem;
 }
 .amount2{
     height: 2.5rem;
-    width: 15rem;
+    width: 100%;
     border: none;
     border-radius: .5rem;
     background-color: white;
@@ -165,5 +165,25 @@ button{
     border: none;
     border-top-right-radius: .25rem;
     border-bottom-right-radius: .25rem;
+
+}
+.to{
+    width: 28.759%;
+}
+.from{
+    width: 28.759%;
+}
+
+@media(max-width:711px){
+    .contain{
+        height: 50vh;
+        width: 100vw;
+    }
+
+}
+@media(max-width:350px){
+    .head h1{
+        font-size: 8vw;
+    }
 
 }
