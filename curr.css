@@ -179,11 +179,15 @@ button{
         height: 50vh;
         width: 100vw;
     }
+    
 
 }
-@media(max-width:350px){
+@media(max-width:400px){
     .head h1{
         font-size: 8vw;
+    }
+    .amount2{
+        font-size: 4vw;
     }
 
 }
